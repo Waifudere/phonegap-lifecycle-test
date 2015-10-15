@@ -8,6 +8,7 @@ var launched_count = 0;
     }
 	
 	function updateDisplay() {
+		document.body.style.backgroundColor = "purple";
 		$("#launched").text("Waifu: " + launched_count);
 		$("#resumed").text("Where the waifu go?: " + paused_count);
 		$("#paused").text("Waifu has returned: " + resumed_count);
