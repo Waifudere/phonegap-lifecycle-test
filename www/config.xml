@@ -6,13 +6,13 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Application Lifecycle Test</name>
+    <name>Lifecycle Test</name>
 
     <description>
-        A sample application that counts the occurances of lifecycle events.
+        Let's count the number of times the app counts
     </description>
 
-    <author href="worcester.ac.uk" email="c.bowers@worc.ac.uk">
+    <author href="worcester.ac.uk" email="couj3_14@worcs.uni.ac.uk">
         WBS Computing
     </author>
 
