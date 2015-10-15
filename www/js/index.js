@@ -5,13 +5,14 @@ var launched_count = 0;
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("Welcome to Waifudere");
+		document.body.style.backgroundColor = "red";
     }
 	
 	function updateDisplay() {
-		document.body.style.backgroundColor = "purple";
 		$("#launched").text("Waifu: " + launched_count);
 		$("#resumed").text("Where the waifu go?: " + paused_count);
 		$("#paused").text("Waifu has returned: " + resumed_count);
+		document.body.style.backgroundColor = "red";
 	}
 
 
