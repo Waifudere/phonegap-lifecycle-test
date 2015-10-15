@@ -4,23 +4,23 @@ var launched_count = 0;
 
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
-		console.log("device ready");
+		console.log("Welcome to Waifudere");
     }
 	
 	function updateDisplay() {
-		$("#launched").text("Lets modify how many opened: " + launched_count);
-		$("#resumed").text("Did i pause this software?: " + paused_count);
-		$("#paused").text("Oh ok the software is running again: " + resumed_count);
+		$("#launched").text("Waifu: " + launched_count);
+		$("#resumed").text("Where the waifu go?: " + paused_count);
+		$("#paused").text("Waifu has returned: " + resumed_count);
 	}
 
 
     // device APIs are available
     //
     function onDeviceReady() {
-		alert("device ready");
+		alert("Waifu is ready for pleasure");
         
-		document.addEventListener("resume", onResume, false);
-		document.addEventListener("pause", onPause, false);
+		document.addEventListener("Waifu returned", onResume, false);
+		document.addEventListener("Waifu gone", onPause, false);
 		
 		launched_count++;
 		updateDisplay();
@@ -29,13 +29,13 @@ var launched_count = 0;
     // Handle the pause event
     //
     function onPause() {
-		alert("pause");
+		alert("Where the waifu?");
 		paused_count++;
 		updateDisplay();
     }
 	
 	function onResume() {
-		alert("resume");
+		alert("Found the waifu");
 		resumed_count++;
 		updateDisplay();
     }
